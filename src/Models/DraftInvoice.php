@@ -32,9 +32,9 @@ class DraftInvoice extends Model
         'recipient',
         'deliveryLocation',
         'delivery',
-        'notes',
+        //'notes',
         'references',
-        'project',
+        //'project',
         'lines',
     ];
 

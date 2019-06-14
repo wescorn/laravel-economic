@@ -308,4 +308,13 @@ public function customerContacts( $customerNumber ) {
     {
         $this->request = new Request($this->agreement, $this->apiSecret);
     }
+
+    /**
+     * @return \LasseRafn\Economic\Builders\InvoiceTemplateBuilder
+     */
+    public function InvoiceTemplates($customerNumber)
+    {
+        return new InvoiceTemplateBuilder($this->request, $customerNumber);
+    }
+    
 }
